@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -14,8 +17,13 @@
     display: flex;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 34px;
     color: #054C73;
@@ -54,7 +62,6 @@ nav ul li a {
     height: 443px;
     background: #DFE9F4;
     border-radius: 10px;
-    padding: 155px 90px 0 0;
 }
 
 .arrival {
@@ -63,7 +70,6 @@ nav ul li a {
 
 .new_arrival {
     margin-top: 37px;
-    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 3px;
@@ -72,7 +78,6 @@ nav ul li a {
 
 h1 {
     margin-top: 20px;
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 52px;
     line-height: 65px;
@@ -81,7 +86,6 @@ h1 {
 
 .arrival_desc {
     margin-top: 20px;
-    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 18px;
     line-height: 39px;
@@ -89,14 +93,215 @@ h1 {
 }
 
 .btn {
+    margin-top: 30px;
     padding: 25px 72px;
     width: 229px;
     height: 70px;
     background: #054C73;
     border-radius: 50px;
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.advantages {
+    width: 100%;
+    height: 150px;
+    background-color: #F2F5FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 125px;
+}
+
+.delivery, .support, .authentic {
+    display: flex;
+    gap: 27px;
+}
+
+.delivery_text, .support_text, .authentic_text {
+
+}
+
+.delivery_text p, .support_text p, .authentic_text p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    margin-top: 6px;
+}
+
+.delivery_text p span, .support_text p span, .authentic_text span{
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+}
+
+.collection {
+    width: 100%;
+    height: 731px;
+}
+
+.collection h2 {
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #333333;
+    text-align: center;
+}
+
+.collection p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #666666;
+}
+
+.collection_images {
+    margin-top: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.collection_images .photo1, .collection_images .photo3 {
+    margin-top: 80px;
+}
+
+.space {
+    width: 100%;
+    height: 874px;
+    background-color: #F2F5FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 62px;
+    position: relative;
+}
+
+.space_text p span {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #333333;
+}
+
+.space_text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 39px;
+    color: #666666;
+    margin-top: 20px;
+    max-width: 514px;
+}
+
+.space_text .btn {
+    padding: 24px 57px;
+    width: 228px;
+    height: 68px;
+    background: #054C73;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.space_image .ellipse {
+    position: absolute;
+    top: 249px;
+    right: 135px;
+}
+
+.space_image .girl {
+    position: absolute;
+    right: 203px;
+    top: 60px;
+    z-index: 1000;
+}
+
+.range {
+    width: 100%;
+    height: 798px;
+    background-color: #E5E5E5;
+    position: relative;
+}
+
+.range h2 {
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+}
+
+.range p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #666666;
+}
+
+.range_images {
+    margin-top: 50px;
+    gap: 20px;
+    /* position: absolute;/ */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.dining, .living, .bedroom {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.work {
+    width: 100%;
+    height: 964px;
+}
+
+.work h2 {
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #333333;
+    text-align: center;
+}
+
+.work p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #666666;
+}
+
+.work_images {
+    margin-top: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.purchase p span, .warehouse p span, .style p span {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+}
+
+.purchase p, .warehouse p, .style p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #666666;
 }
