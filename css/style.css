@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 122px;
+    min-height: 122px;
     background-color: #FFFFFF;
     display: flex;
 }
@@ -51,15 +51,15 @@ nav ul li a {
     position: relative;
     background: url(../images/home_bg.jpg);
     width: 100%;
-    height: 749px;
+    min-height: 749px;
 }
 
 .discover {
     position: absolute;
     right: 90px;
     top: 155px;
-    width: 643px;
-    height: 443px;
+    min-width: 643px;
+    min-height: 443px;
     background: #DFE9F4;
     border-radius: 10px;
 }
@@ -107,7 +107,7 @@ h1 {
 
 .advantages {
     width: 100%;
-    height: 150px;
+    min-height: 150px;
     background-color: #F2F5FF;
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@ h1 {
 
 .collection {
     width: 100%;
-    height: 731px;
+    min-height: 731px;
 }
 
 .collection h2 {
@@ -167,7 +167,7 @@ h1 {
 
 .space {
     width: 100%;
-    height: 874px;
+    min-height: 874px;
     background-color: #F2F5FF;
     display: flex;
     align-items: center;
@@ -219,7 +219,7 @@ h1 {
 
 .range {
     width: 100%;
-    height: 798px;
+    min-height: 798px;
     background-color: #E5E5E5;
     position: relative;
 }
@@ -259,7 +259,7 @@ h1 {
 
 .work {
     width: 100%;
-    height: 964px;
+    min-height: 964px;
 }
 
 .work h2 {
@@ -357,7 +357,7 @@ h1 {
 
 .follow {
     width: 100%;
-    height: 386px;
+    min-height: 386px;
     background-color: #03344F;
     display: flex;
     align-items:center;
@@ -400,9 +400,9 @@ h1 {
     color: #FFFFFF;
 }
 
-.instagram_images {
+/* .instagram_images {
     
-}
+} */
 
 .instagram_images img {
     width: 175px;
