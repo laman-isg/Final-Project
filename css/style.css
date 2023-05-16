@@ -58,8 +58,8 @@ nav ul li a {
     position: absolute;
     right: 90px;
     top: 155px;
-    min-width: 643px;
-    min-height: 443px;
+    width: 643px;
+    height: 443px;
     background: #DFE9F4;
     border-radius: 10px;
 }
@@ -220,7 +220,6 @@ h1 {
 .range {
     width: 100%;
     min-height: 798px;
-    background-color: #E5E5E5;
     position: relative;
 }
 
@@ -310,7 +309,7 @@ h1 {
 }
 
 .mailing h2 {
-    margin-top: 60px;
+    padding-top: 60px;
     font-weight: 700;
     font-size: 32px;
     color: #333333;
@@ -360,8 +359,9 @@ h1 {
     min-height: 386px;
     background-color: #03344F;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
+    gap: 23px;
 }
 
 .follow .follow_text {
@@ -374,6 +374,12 @@ h1 {
 
 .follow_text p {
     margin-top: 34px;
+    width: 400px;
+    min-height: 97px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #FFFFFF;
 }
 
 .follow_text h3 {
@@ -400,15 +406,16 @@ h1 {
     color: #FFFFFF;
 }
 
-/* .instagram_images {
-    
-} */
+.instagram_images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+}
 
 .instagram_images img {
     width: 175px;
     height: 185px;
-    display: inline-block;
-    gap: 21px;
     margin-top: 23px;
     border-radius: 2px;
 }
