@@ -1,410 +1,438 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 122px;
-    background-color: #FFFFFF;
-    display: flex;
+.heading {
+  width: 100%;
+  padding: 40px 120px 40px 120px;
+  min-height: 122px;
+  background-color: #ffffff;
+  display: flex;
 }
 
-/* .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
 
 .logo {
-    font-weight: 700;
-    font-size: 34px;
-    color: #054C73;
+  font-weight: 700;
+  font-size: 34px;
+  color: #054c73;
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
 nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 73px;
 }
 
 nav ul li {
-    list-style: none;
-    font-weight: 600;
-    font-size: 14px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333333;
+  text-decoration: none;
+  color: #333333;
 }
 
 .home {
-    position: relative;
-    background: url(../images/home_bg.jpg);
-    width: 100%;
-    min-height: 749px;
+  position: relative;
+  background: url(../images/home_bg.jpg);
+  width: 100%;
+  min-height: 749px;
 }
 
 .discover {
-    position: absolute;
-    right: 90px;
-    top: 155px;
-    width: 643px;
-    height: 443px;
-    background: #DFE9F4;
-    border-radius: 10px;
+  position: absolute;
+  right: 90px;
+  top: 155px;
+  width: 643px;
+  height: 443px;
+  background: #dfe9f4;
+  border-radius: 10px;
 }
 
 .arrival {
-    padding-left: 39px;
+  padding-left: 39px;
 }
 
 .new_arrival {
-    margin-top: 37px;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 3px;
-    color: #333333;
+  margin-top: 37px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #333333;
 }
 
 h1 {
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 52px;
-    line-height: 65px;
-    color: #054C73;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 65px;
+  color: #054c73;
 }
 
 .arrival_desc {
-    margin-top: 20px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 39px;
-    color: #333333;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 39px;
+  color: #333333;
 }
 
 .btn {
-    margin-top: 30px;
-    padding: 25px 72px;
-    width: 229px;
-    height: 70px;
-    background: #054C73;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  margin-top: 30px;
+  padding: 25px 72px;
+  width: 229px;
+  height: 70px;
+  background: #054c73;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .advantages {
-    width: 100%;
-    min-height: 150px;
-    background-color: #F2F5FF;
+  width: 100%;
+  min-height: 150px;
+  background-color: #f2f5ff;
+  padding: 45px 0px;
+}
+.advantages_items {
     display: flex;
-    align-items: center;
+    align-items:center;
+    justify-content: center;
+    gap: 125px;
+}
+
+.delivery,
+.support,
+.authentic {
+    display: flex;
+    align-items:center;
     justify-content: center;
     gap: 27px;
 }
 
-.delivery, .support, .authentic {
-    display: inline-block;
+.delivery_text p,
+.support_text p,
+.authentic_text p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  line-height: 29px;
+  /* margin-top: 6px; */
 }
 
-.delivery_text p, .support_text p, .authentic_text p {
-    font-weight: 400;
-    font-size: 16px;
-    color: #333333;
-    margin-top: 6px;
-}
-
-.delivery_text p span, .support_text p span, .authentic_text span{
-    font-weight: 600;
-    font-size: 24px;
-    color: #333333;
+.delivery_text p span,
+.support_text p span,
+.authentic_text span {
+  font-weight: 600;
+  font-size: 24px;
+  color: #333333;
+  line-height: 29px;
 }
 
 .collection {
-    width: 100%;
-    min-height: 731px;
+  width: 100%;
+  min-height: 731px;
 }
 
 .collection h2 {
-    margin-top: 60px;
-    font-weight: 700;
-    font-size: 32px;
-    color: #333333;
-    text-align: center;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333333;
+  text-align: center;
 }
 
 .collection p {
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #666666;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #666666;
 }
 
 .collection_images {
-    margin-top: 50px;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    gap: 40px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
-.collection_images .photo1, .collection_images .photo3 {
-    margin-top: 80px;
+.collection_images .photo1,
+.collection_images .photo3 {
+  margin-top: 88px;
 }
 
 .space {
-    width: 100%;
-    min-height: 874px;
-    background-color: #F2F5FF;
+  width: 100%;
+  min-height: 874px;
+  background-color: #f2f5ff;
+  position: relative;
+  padding: 60px 141px 60px 160px;
+}
+
+.space_items {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 62px;
-    position: relative;
 }
-
+.space_text {
+  max-width: 480px;
+}
 .space_text p span {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #333333;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #333333;
 }
 
 .space_text p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 39px;
-    color: #666666;
-    margin-top: 20px;
-    max-width: 514px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 39px;
+  color: #666666;
+  margin-top: 20px;
+  max-width: 514px;
 }
 
 .space_text .btn {
-    padding: 24px 57px;
-    width: 228px;
-    height: 68px;
-    background: #054C73;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  padding: 24px 57px;
+  width: 228px;
+  height: 68px;
+  background: #054c73;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .space_image .ellipse {
-    position: absolute;
-    top: 249px;
-    right: 135px;
+  position: absolute;
+  z-index: -1;
+  left: 933px;
+  top: 20px;
+
 }
 
 .space_image .girl {
-    position: absolute;
-    right: 203px;
-    top: 60px;
-    z-index: 1000;
+  
 }
 
 .range {
-    width: 100%;
-    min-height: 798px;
-    position: relative;
+  width: 100%;
+  min-height: 798px;
+  position: relative;
 }
 
 .range h2 {
-    margin-top: 60px;
-    font-weight: 700;
-    font-size: 32px;
-    text-align: center;
-    color: #333333;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #333333;
 }
 
 .range p {
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #666666;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #666666;
 }
 
 .range_images {
-    margin-top: 50px;
-    gap: 20px;
-    /* position: absolute;/ */
-    display: flex;
-    align-items:center;
-    justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+  /* position: absolute;/ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.dining, .living, .bedroom {
-    margin-top: 30px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
+.dining,
+.living,
+.bedroom {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
 }
 
 .work {
-    width: 100%;
-    min-height: 964px;
+  width: 100%;
+  min-height: 964px;
 }
 
 .work h2 {
-    margin-top: 60px;
-    font-weight: 700;
-    font-size: 32px;
-    color: #333333;
-    text-align: center;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333333;
+  text-align: center;
 }
 
 .work p {
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #666666;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #666666;
 }
 
 .work_images {
-    margin-top: 50px;
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-    gap: 20px;
-    text-align: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
 }
 
-.purchase p span, .warehouse p span, .style p span {
-    margin-top: 30px;
-    font-weight: 700;
-    font-size: 24px;
-    color: #333333;
-    /* text-align: center; */
+.purchase p span,
+.warehouse p span,
+.style p span {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+  /* text-align: center; */
 }
 
-.purchase p, .warehouse p, .style p {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 18px;
-    /* text-align: center; */
-    color: #666666;
+.purchase p,
+.warehouse p,
+.style p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  /* text-align: center; */
+  color: #666666;
 }
 
 .mailing {
-    width: 100%;
-    min-height: 363px;
-    background-color: #F2F5FF;
+  width: 100%;
+  min-height: 363px;
+  background-color: #f2f5ff;
 }
 
 .mailing h2 {
-    padding-top: 60px;
-    font-weight: 700;
-    font-size: 32px;
-    color: #333333;
-    text-align: center;
+  padding-top: 60px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333333;
+  text-align: center;
 }
 
 .mailing p {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #666666;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #666666;
 }
 
 .mailing form {
-    gap: 0;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    margin-top: 50px;
+  gap: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .mailing form .link-btn {
-    width: 153px;
-    height: 70px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #FFFFFF;
-    padding: 26px 45px;
-    background: #054C73;
-    border: 1px solid #011C42;
-    border-radius: 3px;
+  width: 153px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 26px 45px;
+  background: #054c73;
+  border: 1px solid #011c42;
+  border-radius: 3px;
 }
 
 .mailing form .email {
-    width: 333px;
-    height: 70px;
-    padding: 25px 0 25px 25px;
-    font-weight: 400;
-    font-size: 16px;
-    color: #011C42;
-    opacity: 0.3;
+  width: 333px;
+  height: 70px;
+  padding: 25px 0 25px 25px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #011c42;
+  opacity: 0.3;
 }
 
 .follow {
-    width: 100%;
-    min-height: 386px;
-    background-color: #03344F;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 23px;
+  width: 100%;
+  min-height: 386px;
+  background-color: #03344f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
 }
 
 .follow .follow_text {
-    padding-left: 120px;
+  padding-left: 120px;
 }
 
 .follow_text .care {
-    margin-top: 49px;
+  margin-top: 49px;
 }
 
 .follow_text p {
-    margin-top: 34px;
-    width: 400px;
-    min-height: 97px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 35px;
-    color: #FFFFFF;
+  margin-top: 34px;
+  width: 400px;
+  min-height: 97px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #ffffff;
 }
 
 .follow_text h3 {
-    margin-top: 21px;
+  margin-top: 21px;
 }
 
 .follow .instagram {
-    padding-right: 134px;
+  padding-right: 134px;
 }
 
 .instagram h3 {
-    margin-top: 60px;
+margin-top: 60px;
 }
 
 .follow h3 {
     font-weight: 700;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .follow p {
     font-weight: 400;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .instagram_images {
