@@ -8,25 +8,26 @@
 }
 
 .heading {
-  width: 100%;
+  /* width: 100%; */
   padding: 40px 120px 40px 120px;
   min-height: 122px;
   background-color: #ffffff;
   display: flex;
 }
 
-.container {
+/* .container {
   width: 100%;
   margin: 0 auto;
-}
+} */
 
 .logo {
   font-weight: 700;
   font-size: 34px;
   color: #054c73;
 }
+
 header {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,17 +109,11 @@ h1 {
   color: #ffffff;
 }
 
+/* Section advantages */
 .advantages {
-  width: 100%;
   min-height: 150px;
   background-color: #f2f5ff;
   padding: 45px 0px;
-}
-.advantages_items {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    gap: 125px;
 }
 
 .delivery,
@@ -192,12 +187,6 @@ h1 {
   z-index: -2;
 }
 
-.space_items {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 62px;
-}
 .space_text {
   max-width: 500px;
 }
@@ -300,15 +289,6 @@ h1 {
   color: #666666;
 }
 
-.work_images {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 20px;
-  text-align: center;
-}
-
 .purchase p span,
 .warehouse p span,
 .style p span {
@@ -402,7 +382,7 @@ h1 {
 }
 
 .follow_text {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .follow_text h3.care{
