@@ -1,0 +1,103 @@
+@media screen and (min-width: 768px) {
+    .mobile_menu {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .desktop_menu { 
+        display: none !important;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .home {
+        background: none;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .discover {
+        padding: 20px;
+        right: 0;
+        top: 0;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .collection {
+        padding: 0;
+    }
+
+    .support {
+        margin: 20px 0;
+    }
+
+    .photo1 {
+        display: none;
+    }
+
+    .photo3 {
+        display: none;
+    }
+
+    .space_text  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .ellipse {
+        display: none;
+    }
+
+    .range {
+        padding: 30px 0;
+    }
+
+    .work {
+        padding: 30px 0 60px 0;
+    }
+
+    .work img {
+        width: 100%;
+    }
+
+    .mailing form .link-btn {
+        width: 153px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 25px 45px;
+    background: #054c73;
+    border: 1px solid #011c42;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+}
+
+    .instagram img {
+        margin: 20px 0;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .instagram img {
+        margin: 20px 0;
+    }
+    
+}
