@@ -18,15 +18,24 @@
         font-size: 25px;
     }
 
-    .home {
-        background: none;
+    .discover  {
+        background-color: #dfe9f4c7;
+        height: 107h !important;
+    }
+
+    .discover h1 {
+        text-align: center;
     }
 
     .btn {
-        width: 100%;
+        width: 100% !important;
     }
 
     .discover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 20px;
         right: 0;
         top: 0;
@@ -48,6 +57,10 @@
 
     .photo3 {
         display: none;
+    }
+
+    .space_text p {
+        text-align: center;
     }
 
     .space_text  {
@@ -74,8 +87,13 @@
         width: 100%;
     }
 
+    .mailing form {
+        flex-direction: column !important;
+    }
+
     .mailing form .link-btn {
-        width: 153px;
+    width: 100%;
+    margin: 0;
     height: 70px;
     font-weight: 700;
     font-size: 16px;
@@ -84,8 +102,14 @@
     background: #054c73;
     border: 1px solid #011c42;
     border-radius: 3px;
-    position: absolute;
-    right: 0;
+}
+
+.arrival_desc {
+    text-align: center;
+}
+
+.mailing form .email {
+    width: 100%;
 }
 
     .instagram img {
@@ -94,10 +118,90 @@
     
 }
 
-
+@media screen and (max-width: 1092px) {
+    .advantages .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container_respons {
+        width: 100%;
+        max-width: 836px;
+    }
+    .space_image img {
+    width: 100%;
+    }
+    .ellipse {
+        display: none;
+    }
+}
+@media screen and (min-width: 1402px) {
+    .space_text {
+        width: 520px;
+    }
+}
 @media screen and (max-width: 992px) {
     .instagram img {
         margin: 20px 0;
     }
-    
+    .advantages .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container_respons {
+        width: 100%;
+        max-width: 500px;
+    }
+    .collection h2 {
+        margin-top: 10px;
+    }
+    .follow {
+        padding: 49px 10px;
+    }
+    .follow img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .advantages .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container_respons {
+        width: 100%;
+        max-width: 450px;
+    }
+    .follow .imgs img {
+        width: 145px;
+        height: auto;
+    }
+    .col-lg-8 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-lg-8 {
+        width: 60%;
+    }
+    /*.collection_images {*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    flex-direction: column;*/
+    /*}*/
+
+}
+
+@media (max-width: 1100px) {
+
+    .collection_images {
+        display: flex;
+        align-items: center;
+    }
+    .collection_images {
+
+    }
 }

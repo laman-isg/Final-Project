@@ -7,13 +7,31 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .heading {
   padding: 40px 0px;
   min-height: 122px;
   background-color: #ffffff;
   display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
 }
-
+.heading .container {
+  width: 100%;
+}
+.heading row {
+  width: 100%;
+}
+.heading header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
 /*Hamburger menu*/
  
@@ -202,8 +220,11 @@ nav ul li a {
 .home {
   position: relative;
   background: url(../images/home_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   min-height: 749px;
+  max-width: 1440px;
 }
 
 .discover {
@@ -257,6 +278,8 @@ h1 {
 .advantages {
   background-color: #f2f5ff;
   padding: 45px 0px;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .delivery,
@@ -288,9 +311,11 @@ h1 {
 }
 
 .collection {
-  /* width: 100%;
-  min-height: 731px; */
+  width: 100%;
+  max-width: 1440px;
+  min-height: 731px;
   padding: 60px 0;
+  /*overflow: hidden;*/
 }
 
 .collection h2 {
@@ -326,6 +351,8 @@ h1 {
   position: relative;
   padding: 60px 0;
   z-index: -2;
+  max-width: 1440px;
+  width: 100%;
 }
 
 /* .space_text {
@@ -363,9 +390,7 @@ h1 {
   position: relative;
 }
 
-.space_image img {
-  width: 100%;
-}
+
 
 .space_image img.ellipse {
   position: absolute;
@@ -383,8 +408,8 @@ h1 {
 
 
 .range {
-  /* width: 100%; */
-  /* min-height: 798px; */
+   width: 100%;
+   max-width: 1440px;
   padding: 60px 0;
   border-bottom: 1px #D7D6D6 solid;
 }
@@ -428,6 +453,11 @@ h1 {
 
 .work {
   padding: 60px 0 197px 0;
+  width: 100%;
+  max-width: 1440px;
+}
+.work img {
+  width: 100%;
 }
 
 .work h2 {
@@ -448,17 +478,14 @@ h1 {
 
 .purchase p span,
 .warehouse p span,
-.style p span {
+.style_room p span {
   margin-top: 30px;
   font-weight: 700;
   font-size: 24px;
   color: #333333;
-  /* text-align: center; */
 }
 
-.purchase p,
-.warehouse p,
-.style p {
+.work p {
   margin-top: 10px;
   font-weight: 400;
   font-size: 18px;
@@ -468,10 +495,23 @@ h1 {
 
 .mailing {
   width: 100%;
+  max-width: 1920px;
   min-height: 363px;
   background-color: #f2f5ff;
 }
-
+.mailing .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mailing .row form {
+  margin: 5px;
+  max-width: 486px;
+}
+.mailing .row input {
+  width: 100%;
+}
 .mailing h2 {
   padding-top: 60px;
   font-weight: 700;
@@ -502,6 +542,7 @@ h1 {
 .mailing form .link-btn {
   width: 153px;
   height: 70px;
+  margin-top: 25px;
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
@@ -512,20 +553,37 @@ h1 {
 }
 
 .mailing form .email {
+  margin: 45px 0 20px 0;
   height: 70px;
   padding: 25px 0 25px 25px;
   font-weight: 400;
   font-size: 16px;
-  color: #011c42;
-  opacity: 0.3;
-  min-width: 486px;
+  width: 486px;
 }
-
+.mailing form input {
+  color: #000;
+}
+.mailing form input:focus {
+  outline: none;
+}
+.mailing form input::placeholder {
+  color: #011C42;
+  opacity: 0.3;
+}
 .follow {
   width: 100%;
-  min-height: 386px;
   background-color: #03344f;
-  padding: 49px 134px 89px 120px;
+  padding: 49px 0;
+}
+
+.follow .imgs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.follow .imgs img{
+  margin: 7px;
+  width: 22%;
 }
 
 .follow_items {
@@ -537,6 +595,7 @@ h1 {
 }
 
 .follow_text {
+  min-width: 280px;
   /* width: 100%; */
 }
 
@@ -576,6 +635,8 @@ h1 {
     font-weight: 400;
     font-size: 16px;
     color: #ffffff;
+    width: 100%;
+  max-width: 350px;
 }
 
 .instagram_images {
@@ -598,3 +659,14 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+.btn.wow.fadeInUp {
+  width: 241px;
+}
+
+.beautify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
