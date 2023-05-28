@@ -1,43 +1,38 @@
+
 @media screen and (max-width: 768px) {
-    .desktop_menu {
+    .desktop_menu { 
         display: none !important;
     }
-
     .hamb_sticky {
         display: block;
-    }
-
+      }
     .menu {
         display: block;
         background-color: #054c73;
     }
-
     .menu ul {
         margin-top: 180px;
     }
-
-    .menu li {
+    .menu li  {
         margin-top: -30px;
-    }
-
+      }
     .menu li a {
-        color: #fefefe;
-        text-decoration: none;
-        font-size: 25px;
-        line-height: 20px;
+      color: #fefefe;
+      text-decoration: none;
+      font-size: 25px;
+      line-height: 20px;
     }
-
     .menu li a:hover {
-        text-shadow: -1px -1px 12px #FFFFFF;
-        color: white;
-
+      text-shadow: -1px -1px 12px #FFFFFF;
+      color: white;
+    
     }
 
     .logo {
         font-size: 25px;
     }
 
-    .discover {
+    .discover  {
         background-color: #dfe9f4c7;
         height: 107h !important;
     }
@@ -69,19 +64,16 @@
     .collection {
         padding-top: 45px;
     }
-
     .collection_images img {
         width: 70%;
     }
-
+ 
     .support {
         margin: 20px 0;
     }
-
     .photo2 {
-        width: 100%;
+       width: 100%;
     }
-
     .photo1 {
         display: none;
     }
@@ -89,22 +81,19 @@
     .photo3 {
         display: none;
     }
-
     .girl {
         width: 75% !important;
     }
-
     .space_image img {
         width: 80% !important;
         display: block;
         margin: 0 auto;
     }
-
     .space_text p {
         text-align: center;
     }
 
-    .space_text {
+    .space_text  {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -123,12 +112,10 @@
     .range {
         padding: 55px 0;
     }
-
     .range img {
         width: 100%;
         object-fit: cover;
     }
-
     .range_areas {
         width: 70%;
         margin: 0 auto;
@@ -169,7 +156,7 @@
     .instagram img {
         margin: 20px 0;
     }
-
+    
 }
 
 @media screen and (max-width: 1092px) {
@@ -178,52 +165,42 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .container_respons {
         width: 100%;
         max-width: 836px;
     }
-
     .space_image img {
-        width: 100%;
+    width: 100%;
     }
-
     .ellipse {
         display: none;
     }
 }
-
 @media screen and (min-width: 1402px) {
     .space_text {
         width: 520px;
     }
 }
-
 @media screen and (max-width: 992px) {
     .instagram img {
         margin: 20px 0;
     }
-
     .advantages .row {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .container_respons {
         width: 100%;
         max-width: 500px;
     }
-
     .collection h2 {
         margin-top: 10px;
     }
-
     .follow {
         padding: 49px 10px;
     }
-
-    .follow img {
+    .follow img{
         width: 200px;
     }
 }
@@ -234,17 +211,14 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .container_respons {
         width: 100%;
         max-width: 450px;
     }
-
     .follow .imgs img {
         width: 145px;
         height: auto;
     }
-
     .col-lg-8 {
         width: 100%;
     }
@@ -254,7 +228,6 @@
     .col-lg-8 {
         width: 60%;
     }
-
     /*.collection_images {*/
     /*    display: flex;*/
     /*    align-items: center;*/
@@ -268,5 +241,8 @@
     .collection_images {
         display: flex;
         align-items: center;
+    }
+    .collection_images {
+
     }
 }

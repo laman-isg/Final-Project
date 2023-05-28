@@ -12,7 +12,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
 .heading {
   padding: 40px 0px;
   min-height: 122px;
@@ -22,15 +21,12 @@ body {
   max-width: 1440px;
   width: 100%;
 }
-
 .container {
   width: 100%;
 }
-
 .heading row {
   width: 100%;
 }
-
 .heading header {
   display: flex;
   justify-content: space-between;
@@ -53,11 +49,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #abcdf1;
+  background-color:#abcdf1 ;
 }
-
 /*Hamburger menu*/
-
+ 
 
 .hamb_sticky {
   position: fixed;
@@ -188,12 +183,10 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
   font-family: 'Inter';
 }
-
 .menu li a {
   color: #fefefe;
   text-decoration: none;
 }
-
 .menu li a:hover {
   text-shadow: -1px -1px 12px #FFFFFF;
 }
@@ -254,7 +247,6 @@ header nav ul li a:after {
   background: #054c73;
   transition: all 0.5s ease;
 }
-
 header nav ul li a:hover::after {
   width: 100%;
 }
@@ -317,7 +309,6 @@ h1 {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .btn:hover {
   border: 1px solid #06669b;
   background-color: #c9d8ea;
@@ -334,10 +325,10 @@ h1 {
 .delivery,
 .support,
 .authentic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 27px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 27px;
 }
 
 .delivery_text p,
@@ -389,29 +380,23 @@ h1 {
   justify-content: center;
   gap: 40px;
 }
-
 .collection_images .photo1 {
   border-top-left-radius: 90px;
 }
-
 .collection_images .photo3 {
   border-bottom-right-radius: 90px;
 }
-
 .collection_images .photo1,
-.collection_images .photo3 {
+.collection_images .photo3  {
   margin-top: 88px;
 
 
   transition: 0.5s;
 }
-
 .collection_images .photo2 {
   transition: 0.5s;
 }
-
-.collection_images .photo1:hover,
-.collection_images .photo2:hover,
+.collection_images .photo1:hover, .collection_images .photo2:hover,
 .collection_images .photo3:hover {
   box-shadow: 5px 5px 20px #4e5371;
 }
@@ -454,7 +439,6 @@ h1 {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .space_text .btn:hover {
   border: 1px solid #06669b;
   background-color: #c9d8ea;
@@ -464,21 +448,18 @@ h1 {
 .space_image {
   position: relative;
 }
-
 .girl {
   transition: 0.5s;
   object-fit: cover;
 }
-
 .girl:hover {
   transform: scale(1.05);
 }
-
 .girl_side {
   overflow: hidden;
   border-top-left-radius: 70px;
   border-bottom-right-radius: 120px;
-
+  
 }
 
 .space_image img.ellipse {
@@ -486,23 +467,21 @@ h1 {
   z-index: -1;
   top: 190px;
   right: 68px;
-
+  
 }
 
 .range {
-  width: 100%;
-  max-width: 1440px;
+   width: 100%;
+   max-width: 1440px;
   padding: 60px 0;
   border-bottom: 1px #D7D6D6 solid;
 }
-
 .range_areas {
   width: 100%;
   overflow: hidden;
   transition: 0.5s;
   border-radius: 10px;
 }
-
 .range_areas:hover {
   box-shadow: 5px 5px 20px #4e5371;
 }
@@ -549,7 +528,6 @@ h1 {
   width: 100%;
   max-width: 1340px;
 }
-
 .work img {
   width: 100%;
   position: relative;
@@ -557,23 +535,19 @@ h1 {
   transition: 0.5s;
   object-fit: cover;
 }
-
 .work img:hover {
   transform: scale(1.05);
 
 }
-
 .areas {
   width: 100%;
   overflow: hidden;
   border-radius: 15px;
   margin-top: 50px;
 }
-
-.style1 {
+.style1{
   margin-top: 0px;
 }
-
 .work h2 {
   margin-top: 60px;
   font-weight: 700;
@@ -589,9 +563,7 @@ h1 {
   color: #666666;
 }
 
-.style1,
-.style2,
-.style3 {
+.style1 , .style2 , .style3 {
   max-width: 90px;
   min-height: 90px;
   position: absolute;
@@ -616,10 +588,9 @@ h1 {
   font-size: 24px;
   color: #333333;
 }
-
 .sub_title {
   margin-top: 20px;
-}
+} 
 
 .mailing {
   width: 100%;
@@ -627,23 +598,19 @@ h1 {
   min-height: 363px;
   background-color: #f2f5ff;
 }
-
-.mailing .row {
+.mailing .row{
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
 .mailing .row form {
   margin: 5px;
   max-width: 486px;
 }
-
 .mailing .row input {
   width: 100%;
 }
-
 .mailing h2 {
   padding-top: 60px;
   font-weight: 700;
@@ -672,7 +639,7 @@ h1 {
 }
 
 .mailing form .link-btn {
-
+  
   width: 153px;
   height: 70px;
   margin-top: 25px;
@@ -693,20 +660,16 @@ h1 {
   font-size: 16px;
   width: 486px;
 }
-
 .mailing form input {
   color: #000;
 }
-
 .mailing form input:focus {
   outline: none;
 }
-
 .mailing form input::placeholder {
   color: #011C42;
   opacity: 0.3;
 }
-
 .follow {
   width: 100%;
   background-color: #03344f;
@@ -719,8 +682,7 @@ h1 {
   width: 100%;
 
 }
-
-.follow .imgs img {
+.follow .imgs img{
   margin: 7px;
   width: 22%;
 }
@@ -728,7 +690,7 @@ h1 {
 .follow_items {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
   gap: 23px;
 }
@@ -737,7 +699,7 @@ h1 {
   max-width: 400px;
 }
 
-.follow_text h3.care {
+.follow_text h3.care{
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -761,9 +723,9 @@ h1 {
 }
 
 .follow h3 {
-  font-weight: 700;
-  font-size: 24px;
-  color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
 }
 
 .instagram h3 {
@@ -771,31 +733,29 @@ h1 {
 }
 
 .follow p {
-  font-weight: 400;
-  font-size: 16px;
-  color: #ffffff;
-  width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    width: 100%;
   max-width: 350px;
-  margin-right: 0px !important;
+ margin-right: 0px !important;
 }
 
 .instagram_images {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
 }
 
 .instagram_images img {
-  width: 175px;
-  height: 185px;
-  margin-top: 23px;
-  border-radius: 2px;
+    width: 175px;
+    height: 185px;
+    margin-top: 23px;
+    border-radius: 2px;
 }
 
-.purchase,
-.warehouse,
-.style_room {
+.purchase, .warehouse, .style_room {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -811,3 +771,4 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+
