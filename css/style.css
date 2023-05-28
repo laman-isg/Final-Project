@@ -12,6 +12,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
 .heading {
   padding: 40px 0px;
   min-height: 122px;
@@ -21,161 +22,181 @@ body {
   max-width: 1440px;
   width: 100%;
 }
-.heading .container {
+
+.container {
   width: 100%;
 }
+
 .heading row {
   width: 100%;
 }
+
 .heading header {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #054c73;
+  border-radius: 6px;
+  height: 200px;
+  transition: 0.3s;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #abcdf1;
+}
+
 /*Hamburger menu*/
- 
- #menuToggle
- {
-   display: block;
-   position: relative;
-   top: 50px;
-   left: 50px;
-   
-   z-index: 1;
-   
-   -webkit-user-select: none;
-   user-select: none;
- }
- 
- #menuToggle a
- {
-   text-decoration: none;
-   color: #232323;
-   
-   transition: color 0.3s ease;
- }
- 
- #menuToggle a:hover
- {
-   color: tomato;
- }
- 
- 
- #menuToggle input
- {
-   display: block;
-   width: 40px;
-   height: 32px;
-   position: absolute;
-   top: -7px;
-   left: -5px;
-   
-   cursor: pointer;
-   
-   opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
-   
-   -webkit-touch-callout: none;
- }
- 
- /*
-  * Just a quick hamburger
-  */
- #menuToggle span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background: #cdcdcd;
-   border-radius: 3px;
-   
-   z-index: 1;
-   
-   transform-origin: 4px 0px;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- #menuToggle span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
- 
- /* 
-  * Transform all the slices of hamburger
-  * into a crossmark.
-  */
- #menuToggle input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
- }
- 
- /*
-  * But let's hide the middle one.
-  */
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- /*
-  * Ohyeah and the last one should go the other direction
-  */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
- #menu
- {
-   position: absolute;
-   width: 300px;
-   margin: -100px 0 0 -50px;
-   padding: 50px;
-   padding-top: 125px;
-   
-   background: #ededed;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li
- {
-   padding: 10px 0;
-   font-size: 22px;
- }
- 
- /*
-  * And let's slide it in from the left
-  */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
- }
+
+
+.hamb_sticky {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 9999999999999999;
+  background-color: transparent;
+  display: none;
+}
+
+.hamburger {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger:focus>.hamburger__container {
+  box-shadow: 0 0 2px 2px #51a7e8;
+}
+
+.hamburger__container {
+  display: flex;
+  align-items: center;
+  min-width: 30px;
+  min-height: 25px;
+  transition-duration: 0.7s;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.hamburger__bars {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #102027;
+  transition: transform 220ms ease-in-out;
+  z-index: 99999999999999999;
+}
+
+.hamburger__container:hover {
+  transform: scale(1.1);
+}
+
+.hamburger__bars:before,
+.hamburger__bars:after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #17303a;
+  border-radius: 15px;
+  content: '';
+}
+
+.hamburger__bars:before {
+  top: -12px;
+  background-color: #1b3845;
+  transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+
+.hamburger__bars:after {
+  bottom: -12px;
+  transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+
+.hamburger--active .hamburger__bars {
+  transform: rotate(225deg);
+  transition: transform 220ms 120ms ease-in-out;
+}
+
+.hamburger--active .hamburger__bars:before {
+  top: 0;
+  transition: top 100ms ease-out;
+  background-color: #feffff;
+}
+
+.hamburger--active .hamburger__bars:after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
+  background-color: #feffff;
+}
+
+.hamburger:focus,
+.hamburger__container:focus {
+  outline: none;
+}
+
+.buttons_hamb {
+  display: flex;
+}
+
+/*end hamburger*/
+
+.menu {
+  position: fixed;
+  background-color: #102027;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 0;
+  color: #fefefe;
+  transition: width 0.4s ease-in-out;
+  display: none;
+}
+
+.menu ul {
+  display: block;
+  margin: 0 auto;
+  margin-top: 170px;
+  list-style-type: none;
+  transform: translateX(-11%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: -100px;
+}
+
+.menu li {
+  margin-top: 40px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: 'Inter';
+}
+
+.menu li a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-shadow: -1px -1px 12px #FFFFFF;
+}
 
 
 
@@ -190,6 +211,7 @@ body {
   font-weight: 700;
   font-size: 34px;
   color: #054c73;
+  cursor: pointer;
 }
 
 header {
@@ -217,14 +239,36 @@ nav ul li a {
   color: #333333;
 }
 
+header nav ul li a:hover {
+  color: #054c73;
+  text-shadow: 1px 1px -1px#bfebf9;
+}
+
+header nav ul li a:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 2px;
+  width: 0;
+  height: 1px;
+  background: #054c73;
+  transition: all 0.5s ease;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
 .home {
   position: relative;
   background: url(../images/home_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   width: 100%;
   min-height: 749px;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 100%;
 }
 
 .discover {
@@ -274,21 +318,26 @@ h1 {
   color: #ffffff;
 }
 
+.btn:hover {
+  border: 1px solid #06669b;
+  background-color: #c9d8ea;
+  color: #054c73;
+}
+
 /* Section advantages */
 .advantages {
   background-color: #f2f5ff;
   padding: 45px 0px;
   width: 100%;
-  max-width: 1440px;
 }
 
 .delivery,
 .support,
 .authentic {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    gap: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
 }
 
 .delivery_text p,
@@ -341,17 +390,37 @@ h1 {
   gap: 40px;
 }
 
+.collection_images .photo1 {
+  border-top-left-radius: 90px;
+}
+
+.collection_images .photo3 {
+  border-bottom-right-radius: 90px;
+}
+
 .collection_images .photo1,
 .collection_images .photo3 {
   margin-top: 88px;
+
+
+  transition: 0.5s;
+}
+
+.collection_images .photo2 {
+  transition: 0.5s;
+}
+
+.collection_images .photo1:hover,
+.collection_images .photo2:hover,
+.collection_images .photo3:hover {
+  box-shadow: 5px 5px 20px #4e5371;
 }
 
 .space {
   background-color: #f2f5ff;
   position: relative;
   padding: 60px 0;
-  z-index: -2;
-  max-width: 1440px;
+  z-index: 0;
   width: 100%;
 }
 
@@ -386,32 +455,56 @@ h1 {
   color: #ffffff;
 }
 
+.space_text .btn:hover {
+  border: 1px solid #06669b;
+  background-color: #c9d8ea;
+  color: #054c73;
+}
+
 .space_image {
   position: relative;
 }
 
+.girl {
+  transition: 0.5s;
+  object-fit: cover;
+}
 
+.girl:hover {
+  transform: scale(1.05);
+}
+
+.girl_side {
+  overflow: hidden;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 120px;
+
+}
 
 .space_image img.ellipse {
   position: absolute;
   z-index: -1;
-  top: 250px;
+  top: 190px;
   right: 68px;
-  
+
 }
 
-
-
-
-
-
-
-
 .range {
-   width: 100%;
-   max-width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   padding: 60px 0;
   border-bottom: 1px #D7D6D6 solid;
+}
+
+.range_areas {
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.range_areas:hover {
+  box-shadow: 5px 5px 20px #4e5371;
 }
 
 .range img {
@@ -452,12 +545,33 @@ h1 {
 }
 
 .work {
-  padding: 60px 0 197px 0;
+  padding: 60px 0 100px 0;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1340px;
 }
+
 .work img {
   width: 100%;
+  position: relative;
+
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.work img:hover {
+  transform: scale(1.05);
+
+}
+
+.areas {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.style1 {
+  margin-top: 0px;
 }
 
 .work h2 {
@@ -469,28 +583,42 @@ h1 {
 }
 
 .work p {
-  margin-top: 20px;
   font-weight: 400;
   font-size: 20px;
   text-align: center;
   color: #666666;
 }
 
+.style1,
+.style2,
+.style3 {
+  max-width: 90px;
+  min-height: 90px;
+  position: absolute;
+  top: -40px;
+}
+
+
+.work p {
+  margin-top: -10px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #666666;
+}
+
 .purchase p span,
 .warehouse p span,
 .style_room p span {
-  margin-top: 30px;
+  display: block;
+  /* margin-top: -20px; */
+  margin-top: -10px;
   font-weight: 700;
   font-size: 24px;
   color: #333333;
 }
 
-.work p {
-  margin-top: 10px;
-  font-weight: 400;
-  font-size: 18px;
-  /* text-align: center; */
-  color: #666666;
+.sub_title {
+  margin-top: 20px;
 }
 
 .mailing {
@@ -499,19 +627,23 @@ h1 {
   min-height: 363px;
   background-color: #f2f5ff;
 }
-.mailing .row{
+
+.mailing .row {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .mailing .row form {
   margin: 5px;
   max-width: 486px;
 }
+
 .mailing .row input {
   width: 100%;
 }
+
 .mailing h2 {
   padding-top: 60px;
   font-weight: 700;
@@ -535,11 +667,12 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-  position: relative;
-  gap: -1px;
+  /* position: relative; */
+  /* gap: -1px; */
 }
 
 .mailing form .link-btn {
+
   width: 153px;
   height: 70px;
   margin-top: 25px;
@@ -560,16 +693,20 @@ h1 {
   font-size: 16px;
   width: 486px;
 }
+
 .mailing form input {
   color: #000;
 }
+
 .mailing form input:focus {
   outline: none;
 }
+
 .mailing form input::placeholder {
   color: #011C42;
   opacity: 0.3;
 }
+
 .follow {
   width: 100%;
   background-color: #03344f;
@@ -580,8 +717,10 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
 }
-.follow .imgs img{
+
+.follow .imgs img {
   margin: 7px;
   width: 22%;
 }
@@ -589,17 +728,16 @@ h1 {
 .follow_items {
   width: 100%;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   gap: 23px;
 }
 
 .follow_text {
-  min-width: 280px;
-  /* width: 100%; */
+  max-width: 400px;
 }
 
-.follow_text h3.care{
+.follow_text h3.care {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -609,12 +747,13 @@ h1 {
 
 .follow_text p {
   margin-top: 34px;
-  width: 400px;
+  max-width: 100%;
   min-height: 97px;
   font-weight: 400;
   font-size: 16px;
   line-height: 35px;
   color: #ffffff;
+  margin-right: 0px;
 }
 
 .follow_text h3 {
@@ -622,9 +761,9 @@ h1 {
 }
 
 .follow h3 {
-    font-weight: 700;
-    font-size: 24px;
-    color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .instagram h3 {
@@ -632,28 +771,31 @@ h1 {
 }
 
 .follow p {
-    font-weight: 400;
-    font-size: 16px;
-    color: #ffffff;
-    width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  width: 100%;
   max-width: 350px;
+  margin-right: 0px !important;
 }
 
 .instagram_images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
 }
 
 .instagram_images img {
-    width: 175px;
-    height: 185px;
-    margin-top: 23px;
-    border-radius: 2px;
+  width: 175px;
+  height: 185px;
+  margin-top: 23px;
+  border-radius: 2px;
 }
 
-.purchase, .warehouse, .style_room {
+.purchase,
+.warehouse,
+.style_room {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -669,4 +811,3 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
-
